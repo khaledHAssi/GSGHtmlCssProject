@@ -1,12 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Html Test</title>
-</head>
-<body>
-    <a href="#" class="link">fs</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Html css GSG project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <navbar class="container">
+      <nav
+        class="container-fluid nav flex justify-content-evenly text-capitalize"
+      >
+        <ul class="leftNav inline-flex">
+          <li>
+            <h1 class="nav-title">
+              <i
+                class="fa-solid fa-book-bookmark yellow"
+                style="font-size: 1em; margin-right: 0.1em"
+              ></i>
+              pages
+            </h1>
+          </li>
+          <li class="icons">
+            <img
+              src="assets/img/facebook-svgrepo-com (3).svg"
+              style="background-color: aliceblue; margin-right: 0.2em"
+              width="40"
+              class=""
+            />
+            <img
+              src="assets/img/twitter-svgrepo-com.svg"
+              style="background-color: aliceblue; margin-right: 0.2em"
+              width="40"
+              class=""
+            />
+            <img
+              src="assets/img/linked-in-logo-of-two-letters-svgrepo-com.svg"
+              style="background-color: aliceblue; margin-right: 0.2em"
+              width="40"
+              class=""
+            />
+          </li>
+        </ul>
+        <ul class="rightNav">
+          <li class="ml-5">
+            <a href="#" class="nav-link mr-2 active">home</a>
+            <a href="#" class="nav-link mr-2">about</a>
+            <a href="#" class="nav-link mr-2"
+              >pages <i class="fas fa-arrow-down"></i
+            ></a>
+            <a href="#" class="nav-link mr-2">contact us</a>
+            <a href="#" class="text-bold">
+              <i class="fa-solid  fa-cart-shopping mr-2" style="color: #ffffff"
+                ><span class="num">01</span></i
+              ></a
+            >
+            <button
+              type="submit"
+              class="btn btn-lg order f-2 text-bold blue bg-yellow"
+            style="position: relative;">
+              Order Today
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <section class="container bg-blue top-bar flex justify-content-evenly">
+        <div class="section-md ml-5" style="position: relative; top: 8em">
+          <div class="top-bar-text flex justify-content-evenly">
+            <div class="top-bar-hr"></div>
+            <p class="top-bar-p white relative mb-2">
+              <span class="top-bar-welcome text-capitalize"
+                >welcome to pages</span
+              >
+              <span class="block top-bar-booksP text-capitalize"
+                >Books are uniquely portable magic</span
+              >
+              <span class="block top-bar-lorem mt-2">
+                necessitatibus excepturi incidunt, beatae fugit totam repellat
+                adipisctotam repellat adipisctotam repellat adipisci.
+              </span>
+            </p>
+          </div>
+          <div class="ml-1">
+            <button
+              type="submit"
+              class="btn btn-lg order f-2 light-bold blue bg-yellow"
+            >
+              Order Today
+            </button>
+            <a href="#" class="nav-link text-capitalize readLink ml-2"
+              >read free demo</a
+            >
+          </div>
+          <div
+            class="flex justify-content-evenly  mt-2 white"
+            style="margin-left: -4.7em"
+          >
+            <div class="">
+              <p class="text-capitalize" style="font-size: 1.2em">
+                <i class="fas fa-circle small" style="color: #ffc800"></i>
+                pages:
+              </p>
+              <span style="color: #b4c7e7; font-size: large" class=""
+                >586pages</span
+              >
+            </div>
+            <div class="">
+              <p class="text-capitalize" style="font-size: 1.2em">
+                <i class="fas fa-circle small" style="color: #ffc800"></i>
+                Length:
+              </p>
+              <span
+                style="
+                  color: #b4c7e7;
+                  font-size: large;
+                  color: gray;
+                  margin-left: 0.5em;
+                "
+                >1 hour 15 minutes</span
+              >
+            </div>
+            <div>
+              <p class="text-capitalize" style="font-size: 1.2em">
+                <i class="fas fa-circle small" style="color: #ffc800"></i>
+                rating:
+              </p>
+              <span style="color: #b4c7e7; font-size: large"
+                >4.5/5(305 ratings)</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="section-md">
+          <img
+            src="assets/img/TheDarkLight.png"
+            width="500"
+            style="position: relative; top: -2em; left: 0.8em;margin-left: 2em;"
+          />
+        </div>
+      </section>
+    </navbar>
+    <div class="container-fluid learnSection mt-5">
+      <h2 class="blue text-center f-5">What will you learn?</h2>
+      <div class="hr"></div>
+      <div class="flex mt-5">
+        <div style="margin-top: 20px">
+          <div class="inline-flex justify-content-center">
+            <div class="learnSectionText mb-2 mr-2">
+              <div class="cardNum">01</div>
+              <p style="font-weight: bold">
+                Use HDFS & Map Reduce for storing & analyzing data at scale.
+              </p>
+            </div>
+            <div class="learnSectionText">
+              <div class="cardNum">02</div>
+              <p style="font-weight: bold">
+                Consume streaming data using Spark Streaming, Flink, and Storm.
+              </p>
+            </div>
+          </div>
+          <div class="inline-flex justify-content-center">
+            <div class="learnSectionText mb-2 mr-2">
+              <div class="cardNum">03</div>
+              <p style="font-weight: bold">
+                Choose an appropriate data storage technology for your
+                application
+              </p>
+            </div>
+            <div class="learnSectionText">
+              <div class="cardNum">04</div>
+              <p style="font-weight: bold">
+                analyzing non-relational data using HBase , Cassandra , and
+                MongoDB.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <img
+            src="assets/img/Screenshot 2023-10-02 153944.png"
+            class="girl"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-5 chapterSection">
+      <h2 class="text-capitalize blue text-center f-5">the chapter includes</h2>
+      <div class="hr"></div>
+      <div class="flex justify-content-evenly mt-3">
+        <div class="container">
+          <div class="inline-flex justify-content-evenly">
+            <div class="chapterSectionText  leftMove">
+              <div class="title">
+                <h3 class="mb-1 blue">chapter - 01 get started intro</h3>
+              </div>
+              <p class="chapterText">
+                making this the first true value generator on the internet. it
+                of over 200 latin words , combined with a handful.
+              </p>
+              <div
+                class="flex justify-content-between mt-2 white"
+                style="margin-left: 0.2em"
+              >
+                <div class="">
+                  <span class="text-capitalize blue text-bold text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    pages:
+                  </span>
+                  <span style="font-size: large" class="blue">85pages</span>
+                </div>
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    Length:
+                  </span>
+                  <span style="font-size: large; color: gray"
+                    >1 hour 15 minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="chapterSectionText ">
+              <div class="title">
+                <h3 class="mb-1 blue">chapter - 02 get started intro</h3>
+              </div>
+              <p class="chapterText">
+                making this the first true value generator on the internet. it
+                of over 200 latin words , combined with a handful.
+              </p>
+              <div
+                class="flex justify-content-between mt-2 white"
+                style="margin-left: 0.2em"
+              >
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    pages:
+                  </span>
+                  <span style="font-size: large" class="blue">85pages</span>
+                </div>
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    Length:
+                  </span>
+                  <span style="font-size: large; color: gray"
+                    >1 hour 15 minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex justify-content-evenly">
+            <div class="chapterSectionText leftMove">
+              <div class="title">
+                <h3 class="mb-1 blue">chapter - 03 get started intro</h3>
+              </div>
+              <p class="chapterText">
+                making this the first true value generator on the internet. it
+                of over 200 latin words , combined with a handful.
+              </p>
+              <div
+                class="flex justify-content-between mt-2 white"
+                style="margin-left: 0.2em"
+              >
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    pages:
+                  </span>
+                  <span style="font-size: large" class="blue">85pages</span>
+                </div>
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    Length:
+                  </span>
+                  <span style="font-size: large; color: gray"
+                    >1 hour 15 minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="chapterSectionText">
+              <div class="title">
+                <h3 class="mb-1 blue">chapter - 04 get started intro</h3>
+              </div>
+              <p class="chapterText">
+                making this the first true value generator on the internet. it
+                of over 200 latin words , combined with a handful.
+              </p>
+              <div
+                class="flex justify-content-between mt-2 white"
+                style="margin-left: 0.2em"
+              >
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    pages:
+                  </span>
+                  <span style="font-size: large" class="blue">85pages</span>
+                </div>
+                <div class="">
+                  <span class="text-capitalize blue text-bold">
+                    <i class="fas fa-circle small" style="color: #ffc800"></i>
+                    Length:
+                  </span>
+                  <span style="font-size: large; color: gray"
+                    >1 hour 15 minutes</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="start-btn bg-yellow blue">start a 15-days free trail</div>
+      <p class="chapter-description">
+        Short description about each chapter
+        <a href="#" class="text-capitalize blue">have any questions?</a> Contact
+        us
+      </p>
+    </div>
+    <div class="container">
+      <h2 class="text-capitalize blue text-center f-5">Articles & Resources</h2>
+      <div class="hr"></div>
+      <div class="cards flex justify-content-evenly" style="flex-wrap: wrap">
+        <div class="card">
+          <img src="assets/img/euoropeGirl.png" class="euoropeGirl" alt="" />
+          <div class="card-body">
+            <h4 class="blue title" style="font-size: 1.3em">
+              The energy efficiency offers hydrotherapy or swim
+            </h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis, minus neque. Quam, eius. Suscipit eum temporibus
+              illum
+            </p>
+
+            <div class="flex justify-content-between">
+              <a href="#" class="readMore">Read more</a>
+              <span class="author">Author - 23.5.2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/PincleUpPaperInArticleSection.png"
+            class="euoropeGirl"
+            alt=""
+          />
+          <div class="card-body">
+            <h4 class="blue title" style="font-size: 1.3em; width: 80%">
+              Relase the letrast sheets tools containing passages
+            </h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis, minus neque. Quam, eius. Suscipit eum temporibus
+              illum
+            </p>
+            <div class="flex justify-content-between">
+              <a href="#" class="readMore">Read more</a>
+              <span class="author">Author - 23.5.2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/img/esternGirl.png
+            "
+            class="euoropeGirl"
+            alt=""
+          />
+          <div class="card-body">
+            <h4 class="blue title" style="font-size: 1.3em">
+              The energy efficiency offers hydrotherapy or swim
+            </h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis, minus neque. Quam, eius. Suscipit eum temporibus
+              illum
+            </p>
+
+            <div class="flex justify-content-between">
+              <a href="#" class="readMore">Read more</a>
+              <span class="author">Author - 23.5.2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        class="container footer-hr block"
+        style="color: rgba(255, 255, 255, 0.232)"
+      ></div>
+      <div class="footer">
+        &copy; <span style="color: #b4c7e7"> Drafted by</span> Victorflow -
+        <span style="color: #b4c7e7">Powered by</span> Webflow
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,10 +1,547 @@
-a{
-    text-decoration: none;
-    color: black;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a:active{
-    color: blue;
+
+body {
+  overflow-x: hidden;
 }
-a:visited{
-    color: brown;
+
+section {
+  width: 100%;
+}
+
+.section-sm {
+  width: 25%;
+}
+
+.section-md {
+  width: 50%;
+}
+
+.section-lg {
+  width: 75%;
+}
+
+.container {
+  margin: 0px auto !important;
+  width: 75%;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+.inline {
+  display: inline !important;
+}
+
+.pt-1 {
+  padding-top: 0.5em;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+
+.m-1 {
+  margin: 1em;
+}
+.m-2 {
+  margin: 2em;
+}
+.m-3 {
+  margin: 3em;
+}
+.m-4 {
+  margin: 4em;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+.justify-content-around {
+  justify-content: space-around !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.mr-1 {
+  margin-right: 1em;
+}
+
+.mr-2 {
+  margin-right: 2em;
+}
+
+.mr-3 {
+  margin-right: 3em;
+}
+
+.mr-4 {
+  margin-right: 4em;
+}
+
+.mr-5 {
+  margin-right: 5em;
+}
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-4 {
+  margin-top: 4em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+.ml-1 {
+  margin-left: 1em;
+}
+
+.ml-2 {
+  margin-left: 2em;
+}
+
+.ml-3 {
+  margin-left: 3em;
+}
+
+.ml-4 {
+  margin-left: 4em;
+}
+
+.ml-5 { 
+  margin-left: 5em;
+}
+
+/* General setting End */
+
+/* btns setting started*/
+.btn {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 0;
+}
+
+.btn-lg {
+  width: 11em;
+}
+
+/* btns setting end */
+
+/* general colors setting starts */
+
+/* background started */
+.bg-yellow {
+  background-color: #ffca42 !important;
+}
+ 
+.bg-blue {
+  background-color: #1b3764 !important;
+}
+ 
+/* background end */
+
+/*  colors starts*/
+.active {
+  color: #ffca42 !important;
+}
+
+.blue {
+  color: #1b3764 !important;
+}
+.yellow {
+  color: #ffca42 !important;
+}
+
+.black {
+  color: black !important;
+}
+
+.white {
+  color: white;
+}
+
+/* colors end */
+
+/* text setting started */
+.small {
+  font-size: small;
+  margin-left: -0.5em;
+}
+
+.f-1 {
+  font-size: 0.7em;
+}
+
+.f-2 {
+  font-size: 1em;
+}
+.f-3 {
+  font-size: 1.5em;
+}
+.f-4 {
+  font-size: 2em;
+}
+.f-5{
+  font-size:2.5em;
+}
+.text-center{
+  text-align: center;
+}
+.text-bold {
+  font-weight: bold;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.light-bold {
+  font-weight: 600;
+}
+
+/* text setting ends */
+
+
+/* nav section links setting started */
+ /* .dropdown{
+    position: absolute;
+}
+ .dropdown-button{
+  position: relative;
+  background-color: #1b3764;
+  color: white !important;
+  border: 0;
+  width: 4em;
+  font-size: 1em;
+  right:-9.5em ;
+  top:-2.2em;
+
+ }
+ .dropdownContent a{
+  display: none;
+  background-color: none;
+  color: none;
+  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2em;
+  justify-content: space-evenly;
+ }
+.dropdown:hover,.dropdownContent{
+  display: block;
+  color: white} */
+  /* i'm not sure if it wanted or not So i'll let it. */
+.nav {
+  background-color: #1b3764;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+
+.rightNav {
+  list-style: none;
+  padding: 2em;
+  padding-top: 1.4em;
+  font-size: 1em;
+}
+
+.leftNav {
+  padding-top: 1em;
+  list-style: none;
+  padding: 2em;
+  height: 0em;
+}
+.nav-title {
+  color: white;
+  font-size: 1.4em !important;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: #ffca42;
+}
+
+.icons {
+  margin-top: -.5em;
+  margin-left: 2em;
+}
+/* Links Setting End */
+
+/*  topBar section started   */
+.top-bar{
+  padding: 5em;
+  width: 100%;
+  height: 60em;
+  background-color: #1b3764;
+}
+.top-bar-hr{
+  width: 2em;
+  height: 1px;
+  position: absolute;
+  left: 1em;
+  padding: 0;
+  color: #ffca42 !important;
+  background-color: #ffca42 !important;
+}
+.top-bar-p{
+  display: block !important;
+}
+.top-bar-welcome{
+  position: relative;
+  top: -.6em;
+  left: 1.5em;
+  font-style: italic;
+  font-size: 1.5em;
+}
+.top-bar-booksP{
+  font-size: 4.2em;
+  width: 9em;
+  font-weight: lighter !important;
+}
+.top-bar-lorem{
+  letter-spacing: .2px;
+  line-height: 29px;
+  font-size: 1.2em;
+  width: 30em;
+  color: #b4c7e7 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter !important;
+}
+
+.readLink{
+  font-size: 1.2em;
+  border-bottom: 1px solid white;
+}
+/*  topBar section end   */
+/* Second learn section started */
+.learnSection{
+  width: 100%;
+}
+
+.girl{
+  box-shadow: 30px 30px 0px 0px white ,30px 30px 0px 10px #ffca42 , 0 0 0px 0px #ffca42 ;
+  margin-bottom: 5em;
+  margin-right: 9em;
+  position: relative;
+  right: 9em;
+  margin-left: 3em;
+}
+
+.num{
+  background-color: #ffca42;
+  color: #1b3764;
+  position: relative;
+  top: -2em;
+  right: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:.5em ;
+  padding: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.cardNum{
+  background-color: #ffca42;
+  color: #1b3764;
+  font-size: .8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 1em;
+}
+.learnSectionText{
+  background-color: #f4f8ff;
+  font-size: large;
+  width: 26% !important;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  position: relative;
+  right: -1em;
+  padding: 2em;
+  color: #1b3764;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+.hr{
+  width: 3.2em;
+  height: 2px;
+  background-color: #ffca42 !important;
+  text-align:center !important;
+  margin: 20px auto !important;
+}
+/* Second learn section end */
+
+/* Third chapter section started */
+.chapterSection{
+  padding: 5em;
+  margin-bottom: 5em;
+  background-color: #f4f8ff;
+}
+.chapterSectionText{
+  background-color: #ffffff;
+  width: 26.4em !important;
+  border: 0;
+  box-shadow: 1px 1px 18px 0px#b3b4b649;
+  font-size: 1.2em;
+  padding: 2em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  margin-right: 1em;
+}
+.chapterText{
+  font-size: .9em !important;
+  color: gray;
+}
+.start-btn{
+  width: 22em;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 0;
+  margin: 10px auto;
+}
+.chapter-description{
+  width: 18em;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.2em;
+  border: 0;
+  margin: 10px auto;
+  color: rgba(128, 128, 128, 0.553);
+}
+
+.card{
+  width: 20em;
+  align-items: center !important;
+  text-align: left;
+  background-color: white;
+  box-shadow: 1px 1px 18px 0px#b3b4b649;
+}
+.euoropeGirl{
+  width: 20em;
+  margin-left: 0;
+  height: 17em;
+}
+.card-body{
+  padding: 1em;
+  font-weight: 0 !important;
+}
+.title{
+  margin-bottom: .7em;
+}
+.card-text{
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  color: gray;
+}
+.readMore{
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: 2px solid #1b3764;
+  color: 
+  #1b3764;
+}
+.author{
+  margin-right: .4em;
+}
+/* Third chapter section end */
+
+/* footer */
+footer{
+  margin-top: 8.5em;
+  width: 100% !important;
+  background-color: #1b3764 !important;
+  text-align: center !important;
+  color: white;
+  padding: 1.8em;
+  height: 4em;
+  font-size: .8em;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+.footer-hr{
+  width: 75%;
+  height: 2px;
+  background-color:rgba(255, 255, 255, 0.088) !important;
+  position: relative !important;
+  top: -1.2em !important;
+}
+/* project End :) */
+.leftMove{
+  position: relative !important;
+  left: -1.5em;
 }
