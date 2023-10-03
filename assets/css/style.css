@@ -178,8 +178,11 @@ section {
   border: 0;
 }
 
-.btn-lg {
+.order {
   width: 11em;
+  font-weight: bold;
+  font-size: .8em;
+  margin-right: 3.7em;
 }
 
 /* btns setting end */
@@ -294,7 +297,10 @@ section {
   font-family: 'Roboto', sans-serif;
   justify-content: space-between;
   font-size: 1em;
+  padding-right: 3.5em;
+  padding-left: 7em;
 }
+
 
 
 .rightNav {
@@ -303,7 +309,21 @@ section {
   padding-top: 1.4em;
   font-size: 1em;
 }
-
+.num{
+  background-color: #ffca42;
+  color: #1b3764;
+  position: relative;
+  top: -2em;
+  right: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:.5em ;
+  padding: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 .leftNav {
   padding-top: 1em;
   list-style: none;
@@ -334,38 +354,45 @@ a:active {
 /*  topBar section started   */
 .top-bar{
   padding: 5em;
+  padding-left: 6em !important;
+  padding-right: 9em;
   width: 100%;
-  height: 60em;
+  height: 48em;
+  margin-bottom:  8em !important;
   background-color: #1b3764;
 }
 .top-bar-hr{
   width: 2em;
-  height: 1px;
+  height: 2px;
   position: absolute;
-  left: 1em;
+  left: 3.8em;
   padding: 0;
   color: #ffca42 !important;
   background-color: #ffca42 !important;
 }
-.top-bar-p{
-  display: block !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Josefin+Slab:wght@300&family=Roboto&display=swap');
+
 .top-bar-welcome{
   position: relative;
   top: -.6em;
-  left: 1.5em;
+  font-family: 'Josefin Slab', serif;
+  left: 2.5em;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
+.top-bar-p{
+  display: block !important;
+}
+
 .top-bar-booksP{
-  font-size: 4.2em;
+  font-size: 3.2em;
   width: 9em;
   font-weight: lighter !important;
 }
 .top-bar-lorem{
   letter-spacing: .2px;
   line-height: 29px;
-  font-size: 1.2em;
+  font-size: 1em;
   width: 30em;
   color: #b4c7e7 !important;
   font-family: Arial, Helvetica, sans-serif;
@@ -377,34 +404,52 @@ a:active {
   border-bottom: 1px solid white;
 }
 /*  topBar section end   */
+
+
+
+
 /* Second learn section started */
+
+
 .learnSection{
-  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2.5em;
 }
 
-.girl{
-  box-shadow: 30px 30px 0px 0px white ,30px 30px 0px 10px #ffca42 , 0 0 0px 0px #ffca42 ;
-  margin-bottom: 5em;
-  margin-right: 9em;
-  position: relative;
-  right: 9em;
-  margin-left: 3em;
+.learnCards{
+  width:50%;
+  display: flex;
+  justify-content: center !important;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content:center ;
+  margin-left: 8em;
+  margin-right: -3.5em;
 }
-
-.num{
-  background-color: #ffca42;
+.learnSectionText{
+  width: 31% !important;
+  flex-wrap: wrap !important;
+  background-color: #f4f8ff;
+  font-size: large;  
+  line-height: 1.3em;
+  font-size: 1.1em;
+  padding: 2em;
   color: #1b3764;
-  position: relative;
-  top: -2em;
-  right: 1em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:.5em ;
-  padding: 3px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  margin-bottom: 2em;
+}
+
+.GirlPIC{
+  width: 63%;
+  height: 35% !important;
+  box-shadow:35px 35px 0px -3px white, 35px 35px 0px 9px #ffca42, 40px 43px 0px -10px #FFCA43
+}
+.girl{
+width: 50% !important;
+display: inline;
+
 }
 .cardNum{
   background-color: #ffca42;
@@ -412,6 +457,7 @@ a:active {
   font-size: .8em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 40px;
+  font-weight: 700 !important;
   padding: 10px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -420,26 +466,16 @@ a:active {
   -o-border-radius: 50%;
   margin-bottom: 1em;
 }
-.learnSectionText{
-  background-color: #f4f8ff;
-  font-size: large;
-  width: 26% !important;
-  line-height: 1.3em;
-  font-size: 1.1em;
-  position: relative;
-  right: -1em;
-  padding: 2em;
-  color: #1b3764;
-  margin-bottom: 2em;
-  flex-wrap: wrap;
-}
 .hr{
-  width: 3.2em;
+  display: block;
+  width: 2.7em;
   height: 2px;
   background-color: #ffca42 !important;
   text-align:center !important;
   margin: 20px auto !important;
 }
+
+
 /* Second learn section end */
 
 /* Third chapter section started */
@@ -450,15 +486,19 @@ a:active {
 }
 .chapterSectionText{
   background-color: #ffffff;
-  width: 26.4em !important;
+  width: 27em !important;
   border: 0;
   box-shadow: 1px 1px 18px 0px#b3b4b649;
   font-size: 1.2em;
   padding: 2em;
   margin-bottom: 2em;
   flex-wrap: wrap;
-  margin-right: 1em;
+  margin-right: .5em;
 }
+  .chapterSectionText::first-line{
+  text-transform:capitalize ;
+
+  }
 .chapterText{
   font-size: .9em !important;
   color: gray;
@@ -491,7 +531,7 @@ a:active {
   box-shadow: 1px 1px 18px 0px#b3b4b649;
 }
 .euoropeGirl{
-  width: 20em;
+  width: 100%;
   margin-left: 0;
   height: 17em;
 }
@@ -501,6 +541,7 @@ a:active {
 }
 .title{
   margin-bottom: .7em;
+  font-family:   sans-serif;
 }
 .card-text{
   font-size: 1em;
